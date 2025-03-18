@@ -1,0 +1,6 @@
+@for (listItem of listItems; track listItem) {
+  <app-list-item matRipple [data]="listItem"></app-list-item>
+}
+
+<button mat-button (click)="changeFirstElement()">Change</button>
+<button mat-flat-button (click)="addElement()">Add</button>
